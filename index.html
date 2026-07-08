@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAFE LUMIÈRE（カフェ ルミエール）| 宮崎・都城の自家焙煎コーヒーと季節のスイーツ</title>
+<meta name="description" content="朝の光が差し込む、街角の小さな隠れ家カフェ。自家焙煎コーヒーと手作りスイーツ、季節のランチをゆっくりと。都城市中心部・駐車場あり。おひとり様も、大切な人とのひとときも。">
+<meta property="og:title" content="CAFE LUMIÈRE | 朝の光と、深いコーヒーの香りに包まれる。">
+<meta property="og:description" content="自家焙煎コーヒーと季節のスイーツを楽しむ、街角の小さなカフェ。宮崎県都城市。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ヘッダー -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#top" class="header__logo">
+      <span class="header__logo-main">CAFE LUMIÈRE</span>
+      <span class="header__logo-sub">カフェ ルミエール</span>
+    </a>
+    <nav class="header__nav" id="nav">
+      <ul>
+        <li><a href="#about">お店の魅力</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#space">店内の雰囲気</a></li>
+        <li><a href="#owner">オーナーの想い</a></li>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#access">アクセス</a></li>
+        <li><a href="#reserve" class="header__nav-cta">ご予約</a></li>
+      </ul>
+    </nav>
+    <button class="header__burger" id="burger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ファーストビュー -->
+<section class="hero" id="top">
+  <div class="hero__bg ph ph--hero" role="img" aria-label="朝の光が差し込む店内の写真">
+    <img class="ph__img" src="images/hero.jpg" alt="朝の光が差し込む店内">
+  </div>
+  <div class="hero__content">
+    <p class="hero__eyebrow fade-up">Café</p>
+    <h1 class="hero__title fade-up">LUMIÈRE</h1>
+    <p class="hero__sub fade-up">Coffee, Sweets<br><span class="hero__amp">&</span><br>Relaxing Time</p>
+  </div>
+  <div class="hero__scroll"><span></span>Scroll</div>
+</section>
+
+<!-- お店の魅力 -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="section__head fade-up">
+      <p class="section__en">Our Charm</p>
+      <h2 class="section__title">ルミエールの、4つのたのしみ</h2>
+      <p class="section__lead">なにげない一日が、すこし特別になる。<br>そんな時間をご用意して、お待ちしています。</p>
+    </div>
+    <div class="about__grid">
+      <div class="about__card fade-up">
+        <div class="ph ph--sq"><img class="ph__img" src="images/charm-roast.jpg" alt="焙煎機と珈琲豆" loading="lazy"></div>
+        <h3>自家焙煎コーヒー</h3>
+        <p>週に二度、店の奥の小さな焙煎機で豆を煎っています。浅煎りから深煎りまで、その日いちばんおいしい状態でお出しします。</p>
+      </div>
+      <div class="about__card fade-up">
+        <div class="ph ph--sq"><img class="ph__img" src="images/charm-sweets.jpg" alt="季節のタルト" loading="lazy"></div>
+        <h3>季節の手作りスイーツ</h3>
+        <p>県産のフルーツを使ったタルトや、コーヒーに合う焼き菓子。すべて店内の小さなキッチンで、毎朝つくっています。</p>
+      </div>
+      <div class="about__card fade-up">
+        <div class="ph ph--sq"><img class="ph__img" src="images/charm-space.jpg" alt="窓際の席" loading="lazy"></div>
+        <h3>ゆっくり過ごせる空間</h3>
+        <p>本を読む人、手紙を書く人、ただぼんやりする人。どんな過ごし方も歓迎です。時間を気にせず、どうぞごゆっくり。</p>
+      </div>
+      <div class="about__card fade-up">
+        <div class="ph ph--sq"><img class="ph__img" src="images/charm-takeout.jpg" alt="テイクアウトカップ" loading="lazy"></div>
+        <h3>テイクアウト対応</h3>
+        <p>ドリンクも焼き菓子も、お持ち帰りいただけます。近くの公園で、おうちで。ルミエールの味を日常のそばに。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- メニュー -->
+<section class="menu section section--bg" id="menu">
+  <div class="container">
+    <div class="section__head fade-up">
+      <p class="section__en">Menu</p>
+      <h2 class="section__title">メニュー</h2>
+      <p class="section__lead">価格はすべて税込です。季節により内容が変わります。</p>
+    </div>
+
+    <div class="menu__tabs fade-up" role="tablist">
+      <button class="menu__tab is-active" data-tab="coffee" role="tab" aria-selected="true">Coffee</button>
+      <button class="menu__tab" data-tab="sweets" role="tab" aria-selected="false">Sweets</button>
+      <button class="menu__tab" data-tab="lunch" role="tab" aria-selected="false">Lunch</button>
+      <button class="menu__tab" data-tab="takeout" role="tab" aria-selected="false">Takeout</button>
+    </div>
+
+    <div class="menu__panel is-active" data-panel="coffee">
+      <div class="menu__grid">
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-blend.jpg" alt="ハンドドリップ" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>ルミエールブレンド</h3>
+            <p>朝の一杯のためにつくった、やわらかな深煎り。</p>
+            <span class="menu__price">¥550</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-single.jpg" alt="シングルオリジン" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>本日のシングルオリジン</h3>
+            <p>週替わりで世界の産地から。香りの違いをぜひ。</p>
+            <span class="menu__price">¥600</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-latte.jpg" alt="カフェラテ" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>カフェラテ</h3>
+            <p>自家焙煎エスプレッソと、県産牛乳のまろやかさ。</p>
+            <span class="menu__price">¥600</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-ice.jpg" alt="水出しコーヒー" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>水出しアイスコーヒー</h3>
+            <p>ひと晩かけてゆっくり抽出。すっきり澄んだ味わい。</p>
+            <span class="menu__price">¥580</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu__panel" data-panel="sweets">
+      <div class="menu__grid">
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-tart.jpg" alt="季節のタルト" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>季節のフルーツタルト</h3>
+            <p>その季節いちばんの果実を、たっぷりと。</p>
+            <span class="menu__price">¥680</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-basque.jpg" alt="バスクチーズケーキ" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>バスクチーズケーキ</h3>
+            <p>香ばしい焦がし目と、とろける中心。看板スイーツです。</p>
+            <span class="menu__price">¥620</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-pudding.jpg" alt="珈琲プリン" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>自家焙煎珈琲のプリン</h3>
+            <p>ブレンドをそのまま閉じ込めた、ほろにがい大人の味。</p>
+            <span class="menu__price">¥520</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-baked.jpg" alt="焼き菓子" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>本日の焼き菓子</h3>
+            <p>スコーン、マドレーヌなど。コーヒーのお供にどうぞ。</p>
+            <span class="menu__price">¥300〜</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu__panel" data-panel="lunch">
+      <div class="menu__grid">
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-plate.jpg" alt="季節のプレート" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>季節の野菜プレート</h3>
+            <p>地元農家さんの野菜が主役。スープ・パン付き。</p>
+            <span class="menu__price">¥1,280</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-quiche.jpg" alt="キッシュプレート" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>自家製キッシュプレート</h3>
+            <p>さくさくの生地に、季節の具材。サラダを添えて。</p>
+            <span class="menu__price">¥1,180</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-sand.jpg" alt="サンドイッチ" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>厚切りタマゴサンド</h3>
+            <p>ふわふわの卵焼きをたっぷり。朝から人気の一皿。</p>
+            <span class="menu__price">¥880</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-set.jpg" alt="ランチセット" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>ランチドリンクセット</h3>
+            <p>ランチとご一緒に、お好きなドリンクを。</p>
+            <span class="menu__price">+¥300</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu__panel" data-panel="takeout">
+      <div class="menu__grid">
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-dripbag.jpg" alt="ドリップバッグ" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>ドリップバッグ（5個入）</h3>
+            <p>おうちでルミエールの味を。ギフトにも人気です。</p>
+            <span class="menu__price">¥900</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-beans.jpg" alt="コーヒー豆" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>コーヒー豆（100g〜）</h3>
+            <p>焙煎したての豆を量り売り。挽き方もご相談ください。</p>
+            <span class="menu__price">¥750〜</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-togo.jpg" alt="テイクアウトドリンク" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>テイクアウトドリンク</h3>
+            <p>コーヒー・ラテなど各種。散歩のお供にどうぞ。</p>
+            <span class="menu__price">¥450〜</span>
+          </div>
+        </div>
+        <div class="menu__card fade-up">
+          <div class="ph ph--menu"><img class="ph__img" src="images/m-gift.jpg" alt="焼き菓子ギフト" loading="lazy"></div>
+          <div class="menu__body">
+            <h3>焼き菓子詰め合わせ</h3>
+            <p>ちょっとした手土産に。かわいい箱にお詰めします。</p>
+            <span class="menu__price">¥1,500〜</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 店内の雰囲気 -->
+<section class="space section" id="space">
+  <div class="container">
+    <div class="section__head fade-up">
+      <p class="section__en">Atmosphere</p>
+      <h2 class="section__title">店内の雰囲気</h2>
+      <p class="section__lead">一人でも、誰かとでも過ごしやすい場所。<br>時間帯によって、ちがう表情を見せてくれます。</p>
+    </div>
+    <div class="space__rows">
+      <div class="space__row fade-up">
+        <div class="ph ph--wide"><img class="ph__img" src="images/space-morning.jpg" alt="朝、窓から差し込む光" loading="lazy"></div>
+        <div class="space__text">
+          <p class="space__time">Morning — 8:00</p>
+          <h3>朝は、光とともに。</h3>
+          <p>大きな窓から朝日が差し込む、一日でいちばん静かな時間。出勤前の一杯や、休日の朝ごはんに。窓際の席が特等席です。</p>
+        </div>
+      </div>
+      <div class="space__row space__row--reverse fade-up">
+        <div class="ph ph--wide"><img class="ph__img" src="images/space-day.jpg" alt="昼、にぎわう店内" loading="lazy"></div>
+        <div class="space__text">
+          <p class="space__time">Daytime — 12:00</p>
+          <h3>昼は、おいしい時間。</h3>
+          <p>ランチとスイーツを楽しむ、あたたかなにぎわい。友人との会話も、ひとり読書も。ほどよい距離感の席配置を心がけています。</p>
+        </div>
+      </div>
+      <div class="space__row fade-up">
+        <div class="ph ph--wide"><img class="ph__img" src="images/space-evening.jpg" alt="夕方、あたたかな照明" loading="lazy"></div>
+        <div class="space__text">
+          <p class="space__time">Evening — 17:00</p>
+          <h3>夕方は、やわらかな灯り。</h3>
+          <p>日が傾くと、店内はオレンジ色の灯りにつつまれます。一日の終わりに、深煎りのコーヒーと甘いものを。明日への小さなごほうびに。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- オーナーの想い -->
+<section class="owner section section--bg" id="owner">
+  <div class="container">
+    <div class="owner__inner">
+      <div class="ph ph--portrait fade-up"><img class="ph__img" src="images/girl.png" alt="オーナーの写真" loading="lazy"></div>
+      <div class="owner__text fade-up">
+        <p class="section__en">Owner's Message</p>
+        <h2 class="section__title section__title--left">この街に、<br>ほっとできる場所を。</h2>
+        <p>はじめまして。CAFE LUMIÈRE 店主の光井です。</p>
+        <p>会社員だったころ、疲れた帰り道にふらりと入ったカフェの一杯に、心がほどけた経験があります。「いつか自分も、誰かにとってのそんな場所をつくりたい」。その想いだけを頼りに、コーヒーの修行を経て、生まれ育ったこの街に小さな店を開きました。</p>
+        <p>豆は自分の手で焙煎し、スイーツは毎朝この店で焼く。効率は良くないけれど、手をかけた分だけ、ちゃんとおいしくなると信じています。</p>
+        <p>特別な日じゃなくていい。なんでもない日に、ふらりと寄れる。この街の日常に、そっと寄り添えるお店でありたいと思っています。</p>
+        <p class="owner__sign">CAFE LUMIÈRE 店主　光井 あかり</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Instagram -->
+<section class="insta section" id="instagram">
+  <div class="container">
+    <div class="section__head fade-up">
+      <p class="section__en">Instagram</p>
+      <h2 class="section__title">最新情報はInstagramで</h2>
+      <p class="section__lead">季節限定メニュー、営業日のお知らせ、イベント情報など、<br class="pc-only">日々のルミエールを発信しています。</p>
+    </div>
+    <div class="insta__grid fade-up">
+      <div class="ph ph--insta"><img class="ph__img" src="images/in1.jpg" alt="Instagram投稿" loading="lazy"></div>
+      <div class="ph ph--insta"><img class="ph__img" src="images/in2.jpg" alt="Instagram投稿" loading="lazy"></div>
+      <div class="ph ph--insta"><img class="ph__img" src="images/in3.jpg" alt="Instagram投稿" loading="lazy"></div>
+      <div class="ph ph--insta"><img class="ph__img" src="images/in4.jpg" alt="Instagram投稿" loading="lazy"></div>
+      <div class="ph ph--insta"><img class="ph__img" src="images/in5.jpg" alt="Instagram投稿" loading="lazy"></div>
+      <div class="ph ph--insta"><img class="ph__img" src="images/in6.jpg" alt="Instagram投稿" loading="lazy"></div>
+    </div>
+    <div class="insta__cta fade-up">
+      <a href="#" class="btn btn--primary">@cafe_lumiere をフォローする</a>
+    </div>
+  </div>
+</section>
+
+<!-- お知らせ -->
+<section class="news section section--bg" id="news">
+  <div class="container">
+    <div class="section__head fade-up">
+      <p class="section__en">News</p>
+      <h2 class="section__title">お知らせ</h2>
+    </div>
+    <div class="news__grid">
+      <article class="news__card fade-up">
+        <div class="ph ph--news"><img class="ph__img" src="images/news-mango.jpg" alt="いちごのタルト" loading="lazy"></div>
+        <div class="news__body">
+          <time datetime="2026-07-01">2026.07.01</time>
+          <span class="news__tag">季節限定</span>
+          <h3>夏限定「マンゴーとほうじ茶のタルト」はじまりました</h3>
+          <p>宮崎県産の完熟マンゴーを贅沢に。数量限定のため、売り切れの際はご容赦ください。</p>
+        </div>
+      </article>
+      <article class="news__card fade-up">
+        <div class="ph ph--news"><img class="ph__img" src="images/news-store.jpg" alt="店内" loading="lazy"></div>
+        <div class="news__body">
+          <time datetime="2026-06-20">2026.06.20</time>
+          <span class="news__tag">営業時間</span>
+          <h3>7月の営業カレンダーのお知らせ</h3>
+          <p>7月は毎週火曜・第2水曜がお休みです。詳しくはInstagramをご覧ください。</p>
+        </div>
+      </article>
+      <article class="news__card fade-up">
+        <div class="ph ph--news"><img class="ph__img" src="images/news-market.jpg" alt="マルシェ出店" loading="lazy"></div>
+        <div class="news__body">
+          <time datetime="2026-06-10">2026.06.10</time>
+          <span class="news__tag">イベント</span>
+          <h3>「みやこんじょ朝市マルシェ」に出店します</h3>
+          <p>7月20日（日）、ドリップコーヒーと焼き菓子をご用意して出店します。ぜひお立ち寄りください。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- アクセス -->
+<section class="access section" id="access">
+  <div class="container">
+    <div class="section__head fade-up">
+      <p class="section__en">Access</p>
+      <h2 class="section__title">アクセス</h2>
+    </div>
+    <div class="access__inner">
+      <div class="access__map fade-up">
+        <div class="ph ph--map"><span class="ph__label">Google Map 埋め込みエリア</span></div>
+        <a href="#" class="btn btn--primary access__map-btn">Googleマップで開く</a>
+      </div>
+      <div class="access__info fade-up">
+        <dl>
+          <div><dt>店名</dt><dd>CAFE LUMIÈRE（カフェ ルミエール）</dd></div>
+          <div><dt>住所</dt><dd>〒885-0000<br>宮崎県都城市中央町1-2-3 ルミエールビル 1F</dd></div>
+          <div><dt>営業時間</dt><dd>8:00 – 18:00（L.O. 17:30）</dd></div>
+          <div><dt>定休日</dt><dd>毎週火曜・第2水曜</dd></div>
+          <div><dt>駐車場</dt><dd>専用4台（満車時は隣接コインパーキングをご利用ください）</dd></div>
+          <div><dt>電話番号</dt><dd><a href="tel:0986000000">0986-00-0000</a></dd></div>
+          <div><dt>お支払い</dt><dd>現金・各種クレジット・QR決済</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 予約・お問い合わせ -->
+<section class="reserve section section--bg" id="reserve">
+  <div class="container">
+    <div class="section__head fade-up">
+      <p class="section__en">Reservation & Contact</p>
+      <h2 class="section__title">ご予約・お問い合わせ</h2>
+      <p class="section__lead">席のご予約、貸切のご相談、撮影利用のご相談など、<br class="pc-only">お気軽にお問い合わせください。</p>
+    </div>
+    <div class="reserve__types fade-up">
+      <div class="reserve__type"><h3>席のご予約</h3><p>4名様以上の場合はご予約がおすすめです。</p></div>
+      <div class="reserve__type"><h3>貸切のご相談</h3><p>誕生日会や小さなイベントに。10〜16名様まで。</p></div>
+      <div class="reserve__type"><h3>撮影利用のご相談</h3><p>雑誌・SNS等の撮影は事前にご相談ください。</p></div>
+    </div>
+    <form class="form fade-up" onsubmit="return false;">
+      <div class="form__row">
+        <label for="f-name">お名前 <span class="form__req">必須</span></label>
+        <input type="text" id="f-name" name="name" placeholder="例）山田 花子" required>
+      </div>
+      <div class="form__row">
+        <label for="f-tel">電話番号 <span class="form__req">必須</span></label>
+        <input type="tel" id="f-tel" name="tel" placeholder="例）090-0000-0000" required>
+      </div>
+      <div class="form__row">
+        <label for="f-mail">メールアドレス</label>
+        <input type="email" id="f-mail" name="email" placeholder="例）example@email.com">
+      </div>
+      <div class="form__row">
+        <label for="f-type">お問い合わせの種類 <span class="form__req">必須</span></label>
+        <select id="f-type" name="type" required>
+          <option value="">選択してください</option>
+          <option>席の予約</option>
+          <option>貸切の相談</option>
+          <option>撮影利用の相談</option>
+          <option>その他のお問い合わせ</option>
+        </select>
+      </div>
+      <div class="form__row form__row--half">
+        <div>
+          <label for="f-date">ご希望日</label>
+          <input type="date" id="f-date" name="date">
+        </div>
+        <div>
+          <label for="f-num">人数</label>
+          <select id="f-num" name="num">
+            <option value="">選択してください</option>
+            <option>1名</option><option>2名</option><option>3名</option>
+            <option>4名</option><option>5名以上</option>
+          </select>
+        </div>
+      </div>
+      <div class="form__row">
+        <label for="f-msg">ご要望・メッセージ</label>
+        <textarea id="f-msg" name="message" rows="5" placeholder="ご質問やご要望があればご記入ください"></textarea>
+      </div>
+      <div class="form__submit">
+        <button type="submit" class="btn btn--primary btn--large">送信する</button>
+        <p class="form__note">通常2営業日以内にご返信いたします。お急ぎの場合はお電話にてお願いいたします。</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer class="footer">
+  <div class="container">
+    <p class="footer__logo">CAFE LUMIÈRE</p>
+    <p class="footer__address">宮崎県都城市中央町1-2-3　|　8:00–18:00　火曜・第2水曜休</p>
+    <nav class="footer__nav">
+      <a href="#about">お店の魅力</a>
+      <a href="#menu">メニュー</a>
+      <a href="#news">お知らせ</a>
+      <a href="#access">アクセス</a>
+      <a href="#reserve">ご予約</a>
+    </nav>
+    <p class="footer__copy">© 2026 CAFE LUMIÈRE — このサイトはポートフォリオ用のサンプルです。実在の店舗ではありません。</p>
+  </div>
+</footer>
+
+<!-- スマホ用 下部固定CTA -->
+<div class="fixed-cta" id="fixedCta">
+  <a href="#menu" class="fixed-cta__item">
+    <span class="fixed-cta__icon">☕</span>メニュー
+  </a>
+  <a href="#access" class="fixed-cta__item">
+    <span class="fixed-cta__icon">📍</span>アクセス
+  </a>
+  <a href="#reserve" class="fixed-cta__item fixed-cta__item--main">
+    <span class="fixed-cta__icon">🗓</span>ご予約
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
