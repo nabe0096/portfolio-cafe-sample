@@ -641,6 +641,7 @@ ul { list-style: none; }
   .pc-only { display: none; }
   .section { padding: 72px 0; }
   .section__title { font-size: 25px; }
+  .section__title--nowrap { font-size: 20px; white-space: nowrap; }
   .hero__title { font-size: 38px; }
   .hero__sub { font-size: 12px; letter-spacing: 0.1em; line-height: 1.8; }
   .hero__eyebrow { font-size: 18px; }
